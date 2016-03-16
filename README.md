@@ -7,4 +7,4 @@ Android aidl 接口监听实现
 《Android开发艺术探索》
 
 
-增加binde池的概念，绑定一个servic可以使用多种Aid接口。
+增加binder池的概念，绑定一个servic可以使用多种Aid接口。
