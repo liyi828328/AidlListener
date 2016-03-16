@@ -13,7 +13,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">r
+        <activity android:name=".MainActivity">
+            r
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -28,6 +29,15 @@
             android:permission="com.myaidl.server.ACCESS_BOOK_SERVICE">
             <intent-filter>
                 <action android:name="com.myaidl.server.BIND"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".aidl.BinderPoolService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.myaidl.server.binderPool.BIND"/>
             </intent-filter>
         </service>
     </application>

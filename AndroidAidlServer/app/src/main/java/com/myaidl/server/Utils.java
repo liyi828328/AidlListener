@@ -14,4 +14,7 @@ package com.myaidl.server;
  */
 public class Utils {
     public static final String TAG = "myaidl_server";
+
+    public static final int BOOK_BINDER_CODE = 0;
+    public static final int USER_BINDER_CODE = 1;
 }
