@@ -5,3 +5,6 @@ Android aidl 接口监听实现
 
 另外推荐一本Android进阶书籍，感觉不错
 《Android开发艺术探索》
+
+
+增加binde池的概念，绑定一个servic可以使用多种Aid接口。
