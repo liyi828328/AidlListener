@@ -31,6 +31,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private static final String TAG = "BaseActivity";
 
     protected ActionBar mActionBar;
+    protected ThreadManager mThreadManager;
 
     protected Handler mHandler = new SafeHandler(this) {
         @Override
@@ -62,6 +63,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mThreadManager = ThreadManager.getInstance();
         initActionBar();
     }
 

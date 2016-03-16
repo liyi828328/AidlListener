@@ -18,7 +18,7 @@ import com.myaidl.server.model.Book;
 
 import java.util.List;
 
-public class ClientActivity extends BaseActivity implements View.OnClickListener {
+public class BookServiceActivity extends BaseActivity implements View.OnClickListener {
 
     private Context mContext;
     private IBookManager mIBookManager;
@@ -31,7 +31,7 @@ public class ClientActivity extends BaseActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.book_activity_layout);
         mContext = getApplicationContext();
         mThreadManager = ThreadManager.getInstance();
         bindView();
